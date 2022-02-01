@@ -62,6 +62,12 @@ questionnaire_file.write(last_question_dict[introvert_extrovert_letter])
 if introvert_extrovert_explanation:
     questionnaire_file.write(", " + introvert_extrovert_explanation)
 
+
+print("now its time for me to ask you questions!")
+print("what is one important idea for a student to keep in their head as they enter the class room"?)
+print("what is your least favorite thing that students tend to do?")
+print("what do you like most about being a teacher?")
+
 questionnaire_file.close()
 
 
