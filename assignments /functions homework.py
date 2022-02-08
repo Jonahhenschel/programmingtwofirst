@@ -35,13 +35,23 @@ def tell_me_a_joke():
     It should sum up all the numbers in the list and print the sum.
 
 """
-def maxnum(a,b,c):
-    return max(a,b,c)
-def list_sum(a):
 
+
+def maxnum(a,b,c):
+    if a>b and a>c:
+        print (a)
+    if b>a and b>c:
+        print(b)
+    if c>a and c>b:
+        print(c)
+
+
+def list_sum(a):
     sum1=0
     for i in a:
         sum1=sum1+i
+    print(sum1)
+
 
 
 """
@@ -56,23 +66,29 @@ def list_sum(a):
 3.  Write a function called is_palindrome that will accept a string and return True if it is a palindrome,
     and False if it is not.
 """
+#rewrite using ideas we have learned
 def in_range (num, left, right):
-    return left<num<right
-"""
-def is_palindrome(a):
-    return a==a[::-1]
-"""
-def is_palindrome(a):
-    for i in range(len(a)//2):
-        if a[i] !=a[len(a)-i-1]:
-            return False
-    return True
+    if num>left and num<right:
+        return True
+    else:
+        return False
+
+def find_evens (a):
+    b=[]
+    for i in a:
+        if i % 2 ==0:
+            b.append(i)
+
+    return b
 
 
 
 
 
-racecar
+
+
+
+
 """
 If you're finished, look up and read about what default parameters are. Then try one of the following function
 challenges with default parameters:
